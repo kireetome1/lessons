@@ -1,0 +1,66 @@
+<!doctype html>
+  <html>
+    <head>
+      <title>test</title>
+      <meta charset="utf-8">
+   <style>
+   	table, th{
+   		border: solid 1px black;
+   	}
+   	.apple{
+   		border: dotted 1px green;
+   		color: blue;
+   		background-color: green;
+   	}
+   	#gridwrapper{
+      flex:1 20px;
+      border:solid 10px;
+   		border-radius: 5px;
+   		background-color: pink;
+   		display: grid;
+   		grid-gap: 50px;
+   		grid-template-rows: 100px 100px 100px;
+   		grid-template-columns: 1fr 1fr;
+   	}
+   	#gridwrapper>div{
+   		flex:1 20px;
+   		border-radius: 5px;
+   		background-color: purple;
+   	}
+   </style>
+    </head>
+    <body>
+      <h1>先週の復習</h1>
+      テーブル
+      <hr>
+      
+      <table>
+        <caption>テーブルの説明</caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>名前</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="apple">@yt</td>
+            <td>吉野</td>
+          </tr>
+          <tr>
+            <td class="apple">@tanaka</td>
+            <td>田中</td>
+          </tr>
+        </tbody>
+      </table>
+   <h1>    <div id="gridwrapper">
+          <div>1.apple</div>
+          <div>2.grape</div>
+          <div>3.banana</div>
+          <div>4.pear</div>
+          <div>5.watermelon</div>
+          <div>6.orange</div>
+          </div>
+</h1>      
+    </body>
+  </html>

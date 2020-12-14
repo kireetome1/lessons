@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>overflow</title>
+	<meta charset="utf-8">
+	<style>
+		div{overflow: auto;
+			width:200px;
+			height: 300px;
+			border:solid 2px green; 
+		}
+	</style>
+</head>
+<body>
+<h1>overflow</h1>
+
+<div>Description
+Overflow options include clipping, showing scrollbars, or displaying the content flowing out of its container into the surrounding area.
+
+Specifying a value other than visible (the default) creates a new block formatting context. This is necessary for technical reasons — if a float intersected with the scrolling element it would forcibly rewrap the content after each scroll step, leading to a slow scrolling experience.
+
+In order for overflow to have an effect, the block-level container must have either a set height (height or max-height) or white-space set to nowrap.
+
+Setting one axis to visible (the default) while setting the other to a different value results in visible behaving as auto.
+
+The JavaScript Element.scrollTop property may be used to scroll an HTML element even when overflow is set to hidden.</div>
+</body>
+</html>
