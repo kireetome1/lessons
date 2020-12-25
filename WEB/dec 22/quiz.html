@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Which is the highest mountain in the world?</h1>
+<button class="hoho">Mt.Everest</button>
+	<button class="hehe">Mt.Fuji</button>
+	<button class="lame">Mt.Annapurna</button>
+	<button class="haha">Mt.K2</button>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('button.hoho').on('click',function(){
+				$('h1').text('CORRECT')
+			});
+			$('button.hehe').on('click',function(){
+				$('h1').text('WRONG')
+		});
+			$('button.lame').on('click',function(){
+				$('h1').text('WRONG')
+		});
+			$('button.haha').on('click',function(){
+				$('h1').text('WRONG')
+		});
+			})
+	
+	</script>
+</body>
+</html>
