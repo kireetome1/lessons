@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Image Slide
+	</title>
+</head>
+<h1>Slide</h1>
+<hr color="green">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<img src="nb.jpg">
+<script>
+	$(function(){
+		let num=1;
+		$("img").on("click",function(){
+		if( num== 1){
+			$("img").attr("src","fav.jpg");
+			num=2;
+		}
+		else{
+			$("img").attr("src","nb.jpg");
+			num=1;
+		}
+		});
+	})
+</script>
+<!-- <script>
+	$(function(){
+	$("attr").on("click",function(){
+			$("attr").attr("src","nb.jpg");
+		});
+	})
+</script> -->
+</body>
+</html>

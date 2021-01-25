@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gazofiles</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>gazofiles</h1>
+	<hr color="red">
+	<img src="nb.jpg">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		
+		var gazofiles=[
+		"1.jpg",
+		"fav.jpg",
+		"logo.png",
+		"image.jpg"]
+		let num=0;
+		$("img").on("wheel",function(){
+			$("img").attr("src",gazofiles[num]);
+			num++;
+			if (num>gazofiles.length) {
+				num=0;
+			};
+			// else{
+			// 	$("img").attr("src",gazofiles[num]);
+			// 	num=0;
+			// }
+		});
+	})
+</script>
+</body>
+</html>

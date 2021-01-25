@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html:list</title>
+	<!-- <meta charset="utf-8"> -->
+	<style>
+		p{
+			color: red;
+		}
+		ol{
+			color: pink;
+		}
+		ul{
+			color: #CC3333;
+		}
+	</style>
+<!-- 	<style>
+div {
+  background-image: path('C:\Users\200214\Desktop\nb.jpg');
+}
+</div>
+</style> -->
+<div style="background-image: path('C:\Users\200214\Desktop\nb.jpg);">
+	</div>
+</head>
+<body>
+<h1>NARUTO</h1>
+<hr size="5" color="green">
+ <h1>
+ <ol>
+     <li class="naruto">ナルト</li>
+     <li class="sasuke">サスケ</li>
+     <li class="kakashi">カカシ</li>
+     <li class="sakura">サクラ</li>
+   </ol>
+
+   <ul>
+     <li class="naruto" id="na1">ナルト</li>
+     <li class="sasuke" id="na2">サスケ</li>
+     <li class="kakashi" id="na3">カカシ</li>
+     <li class="sakura" id="na4">サクラ</li>
+   </ul>
+   </h1>
+   <hr size="5" color="blue">
+ <h1>
+  <p>
+    Narutoは週刊少年ジャンプに連載されていた忍者の物語。ナルトは第一次世界大戦後に中人試験に合格しました。。。
+  </p>
+  
+  <p>
+    また、いつの間にか子どもがいて、やっぱり忍者になっていく？
+    名前はボルトであり！
+  </p>
+  </h1>
+<hr size="5" color="orange">
+<form>
+	NAME: <input type="name" name="name"><br>
+	ID: <input type="id" name="id"><br>
+	CONTACT: <input type="contact" name="contact"><br>
+	DOB: <input type="date" name="date"><br>
+	PASSWORD: <input type="password" name="password"><br>
+	SUBMIT!<input type="submit" value="ok">
+</form>
+ <hr size="5" color="purple">
+<img src="C:\Users\200214\Desktop\nb.jpg">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--  <script>
+      $(function(){
+      alert( "HELLO" );
+    })
+      </script> -->
+     <!--   <script>
+      $(function(){
+     $("h1").css("color",("green"));
+    })
+      </script> -->
+       <script>
+      $(function(){
+     $('h1').on('click',function(){
+     	$('h1').css('color','purple');
+     });
+    })
+      </script>
+       <script>
+      $(function(){
+     $('li.naruto').on('click',function(){
+     	$('li.naruto').css('color','orange');
+     	});
+     	 $('li.sasuke').on('click',function(){
+     	$('li.sasuke').css('color','purple');
+     	});
+     	 $('li.kakashi').on('click',function(){
+     	$('li.kakashi').css('color','blue');
+     	});
+     	 $('li.sakura').on('click',function(){
+     	$('li.sakura').css('color','red');
+     });
+    })
+      </script>
+       <!-- </script> -->
+       <script>
+      $(function(){
+			$('#na1').on('click',function(){
+				$('#na1').text('渦巻')
+			});
+			$('#na2').on('click',function(){
+				$('#na2').text('佐助')
+		});
+			$('#na3').on('click',function(){
+				$('#na3').text('案山子')
+		});
+			$('#na4').on('click',function(){
+				$('#na4').text('桜')
+		});
+			})
+      </script>
+    </body>
+  </html>
+</body>
+</html>
