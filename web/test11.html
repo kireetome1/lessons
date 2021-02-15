@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test11</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>lama</h1>
+	<br>
+	<button id="name" color="red">previous</button>
+	<button id="same" color="green">next</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+		$(function(){
+			$('#name').on('click',function(){
+				$('h1').css('color','blue')
+			});
+			$('#same').on('click',function(){
+				$('h1').css('color','red')
+			});
+			})
+	
+	</script>
+</body>
+</html>
