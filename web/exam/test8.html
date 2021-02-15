@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test8</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Show</h1>
+
+	<hr>
+
+	<h2>Coffee</h2>
+
+	<img src="img/image.jpg" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(function(){
+
+		const images=[
+			"img/logo.png",
+			"img/sp.jpg",
+			"img/13.jpg",
+			"img/image.jpg"
+
+		]
+
+		const names=[
+			"Logo",
+			"Spirit",
+			"Test",
+			"Coffee"
+
+		]
+
+		 {
+		 	let num = 0
+           
+           $("img").on("click", function(){
+             $("img").attr("src", images[ num ]);
+             num++
+    		})
+       	 }
+       	 {
+       	 	let num = 0
+
+    		 $("img").on("click", function(){
+             $("h2").text( names[ num ] );
+             num++		
+			})
+    	 }
+		})
+</script>
+</body>
+</html>

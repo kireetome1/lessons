@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test10</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Button_Show</h1>
+
+	<hr>
+
+	<h2>Coffee</h2>
+
+	<img src="img/image.jpg" width="300" height="400">
+	<br>
+	<button id="name" color="red">previous</button>
+	<button id="same" color="green">next</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(function(){
+
+		const images=[
+			"img/logo.png",
+			"img/sp.jpg",
+			"img/13.jpg",
+			"img/image.jpg"
+
+		]
+
+		const names=[
+			"Logo",
+			"Spirit",
+			"Test",
+			"Coffee"
+
+		]
+
+		 {
+		 	let num = 0
+           
+           $("#name").on("click", function(){
+             $("img").attr("src", images[ num ]);
+             num++
+           if ( num > images.length ) {
+       			num = 0;
+    		 };
+    		})
+       	 }
+       	 {
+       	 	let num = 0
+
+    		 $("#name").on("click", function(){
+             $("h2").text( names[ num ] );
+             num++
+
+             if ( num > names.length ) {
+       			num = 0;
+    		 };
+		
+			});
+    	 }
+		})
+</script>
+<script>
+	$(function(){
+
+		const images=[
+			"img/logo.png",
+			"img/sp.jpg",
+			"img/13.jpg",
+			"img/image.jpg"
+
+		]
+
+		const names=[
+			"Logo",
+			"Spirit",
+			"Test",
+			"Coffee"
+
+		]
+
+		 {
+		 	let num = 0
+           
+           $("#same").on("click", function(){
+             $("img").attr("src", images[ num ]);
+             num++
+           if ( num > images.length ) {
+       			num = 0;
+    		 };
+    		})
+       	 }
+       	 {
+       	 	let num = 0
+
+    		 $("#same").on("click", function(){
+             $("h2").text( names[ num ] );
+             num++
+
+             if ( num > names.length ) {
+       			num = 0;
+    		 };
+		
+			});
+    	 }
+		})
+</script>
+</body>
+</html>

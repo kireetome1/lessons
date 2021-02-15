@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test7</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Slide Show</h1>
+
+	<hr>
+
+	<img src="img\image.jpg" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(function(){
+
+		const images=[
+			"img/logo.png",
+			"img/sp.jpg",
+			"img/13.jpg",
+			"img/image.jpg"
+
+		]
+
+		 let num = 0;
+           
+           $("img").on("click", function(){
+             $("img").attr("src", images[ num ]);
+             num++
+		
+			});
+		})
+</script>
+</body>
+</html>
